@@ -1,0 +1,12 @@
+services:
+  webapp:
+    build: .
+    ports:
+      - "8080:5000"
+    environment:
+      APP_MESSAGE: "Module 4 Docker Project"
+    volumes:
+      - app-data:/data
+
+volumes:
+  app-data:
